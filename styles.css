@@ -1,0 +1,220 @@
+
+
+ body {
+
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  
+   
+    color: #000033;
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, #35005a 3%, #0e0e0e 38%,  #5c0a0a  68%, #010457  98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+section {
+    background: #EFEBE0 ;
+    padding: 20px  ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #343131;
+    margin-bottom: 5px;
+}
+h1{
+    font-family: "Cinzel Decorative", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8rem;
+    color: #EFEBE0;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+ h2 {
+    font-family: "EB Garamond", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 5px 0 25px;
+    
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border:4px double #F5BD02;
+    border-radius: 25px;
+    background-color:#890304 ;
+    color: #f8f2bf;
+    cursor: pointer;
+    
+    align-self: flex-end;
+}
+
+button:hover {
+    background-color: #eead0e;
+    color: #000000;
+    border-color:#3c0d56 ;
+   
+}
+p{
+    margin: 10px 0;
+}
+img{
+    border-radius: 5px;
+   
+}
+hr {
+    border: none;
+    border-top: 0.12rem  solid  #dbb658;
+    border-bottom: 0.5rem solid #dbb658;
+    height: 1.2rem;   
+}
+.header{
+   
+   background-color: #000000 ;
+}
+
+.sect{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+
+}
+.divmain{
+    height: fit-content;
+}
+.divbut{
+    display: flex;
+    height: 100%;
+
+
+}
+
+.bonheur-royale-regular {
+    font-family: "Bonheur Royale", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+   color:  #ffffff;
+  }
+
+.container {
+    display: grid;
+    grid-template:repeat(3 , 1fr) / repeat(2 , 1fr) ;
+    gap: 10px;
+    padding: 20px;
+}
+span{
+    background-color: #dbb658;
+    color: #000000;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+.webd{
+    color: 	#301e4b;
+    
+}
+
+@media(max-width:900px)
+{
+    *{
+        font-size: 0.7rem;
+        
+    }
+    
+    h1{
+        font-size:3rem ;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+       font-size: small;
+       margin: 0;
+       padding: 0;
+    }
+    .bonheur-royale-regular{
+        font-size: 1.8rem;
+    }
+    p{
+        margin: 2px;
+    }
+    button{
+        margin: 0;
+        font-size: smaller;
+        padding: 4px;
+    }
+   img{
+    width: 25vh;
+
+    }
+
+
+
+}
+
+
