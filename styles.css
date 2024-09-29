@@ -89,7 +89,7 @@ h1{
     font-family: "Cinzel Decorative", system-ui;
     font-weight: 700;
     font-style: normal;
-    font-size: 8rem;
+    font-size: clamp(5rem,4vw,80rem);
     color: #EFEBE0;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -180,17 +180,41 @@ span{
     
 }
 
-@media(max-width:900px)
+@media(min-width:768px)and(max-width:900px)
 {
     *{
-        font-size: 0.7rem;
+        font-size: 1rem;
         
     }
     
+    p{
+        margin: 2px;
+    }
+    button{
+        margin: 1rem;
+        font-size: 4rem;
+        padding: 4px;
+    }
+   img{
+    width: 10vw;
+
+    }
+    .bonheur-royale-regular{
+        padding: auto 0.5rem;
+    }
+}
+
+@media(max-width:768px)
+{
+    *{
+        font-size: 0.8rem;
+        
+    }
+    
+    
     h1{
         font-size:3rem ;
-        margin: 0;
-        padding: 0;
+        padding-top: 3rem;
     }
     h2{
        font-size: small;
@@ -208,13 +232,9 @@ span{
         font-size: smaller;
         padding: 4px;
     }
-   img{
-    width: 25vh;
-
-    }
-
-
-
+    img{
+        width: 25vh;
+    
+        }
+      
 }
-
-
